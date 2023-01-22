@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark bg-primary sticky-top">
+    <a [routerLink]="['/users']" class="navbar-brand"><i class='fas fa-record-vinyl' style='font-size:1.5em'></i> Shop</a>
+    <div class="input-group col-5">
+        <div class="input-group-prepend">
+            <button (click)="searchGoods()" class="input-group-text" id="btnSearch">Search</button>
+        </div>
+        <input [(ngModel)]="searchLine" id="searchLine" (ngModelChange)="checkEmptiness()" type="text" class="form-control" placeholder="Example">
+    </div>
+    <div class="btn-group col-4" role="group">
+        <button class="btn btn-large btn-success col-12" id="btnBasket" 
+        [routerLink]="['/menus/menu', { outlets: {primary: ['basket'], nav: 'basicnav' } }]">Basket <i class="fa fa-shopping-basket"></i>
+        </button>
+        <button class="btn btn-large btn-success col-12" id="btnBasket" 
+        [routerLink]="['/menus/menu', { outlets: {primary: ['ordersmenu'], nav: 'basicnav' } }]">Orders <i class='fas fa-receipt'></i>
+        </button>
+        <button class="btn btn-large btn-danger col-12" id="btnSignOut" 
+        [routerLink]="['/users']" (click)="LogOut()">Sign out <i class='fas fa-door-open'></i>
+        </button>
+        
+    </div>
+</nav>
+<br>

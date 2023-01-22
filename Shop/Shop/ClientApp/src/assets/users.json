@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "login": "first",
+        "password": "8774ca83f0681603ed2986f01d44cffc95a1c713bad7c042f112e0629cdd0a52",
+        "isAdmin": true
+    },
+    {
+        "id": 2,
+        "login": "second",
+        "password": "8774ca83f0681603ed2986f01d44cffc95a1c713bad7c042f112e0629cdd0a52",
+        "isAdmin": false
+    }
+]

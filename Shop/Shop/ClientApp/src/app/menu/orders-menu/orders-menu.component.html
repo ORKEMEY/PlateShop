@@ -1,0 +1,33 @@
+<br>
+<div class = "list-grid">
+    <div class = "center-col header block">
+        <div class="list">
+            <h3 *ngIf="orders === null" class="loading">Loading</h3>
+            <h3 *ngIf="orders !== null" >Your orders:</h3>
+        </div>
+        <div>
+            <div id="Alert" class="alert alert-danger col-10" role="alert" #alertDiv hidden>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div *ngIf="orders !== null && orders.length !== 0" class = "list-grid">
+    <div id="ItemList" class="center-col block">
+        <list-element-component class="list-el-comp" *ngFor="let item of itemsPaginated; let i = index" [Header]="i+1" [Content]="item.address">
+        </list-element-component>
+    </div>
+
+</div>
+
+
+
+
+<div class="carousel-container">
+    <ul  class="pagination-carousel block">
+        <li (click)="previous()">  Prev </li>
+        <li>  {{CurrentPage}} </li>
+        <li (click)="next()">  Next </li>
+    </ul>
+</div>

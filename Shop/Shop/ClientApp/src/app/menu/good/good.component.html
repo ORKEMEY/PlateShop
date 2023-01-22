@@ -1,0 +1,37 @@
+<div class ="main-grid">
+    <div class="container-good center-col block">
+
+
+        <div class = "header list row image_container">
+            <img class="image" src="../../../assets/plate.png" alt="music plate" width="200" height="200"  />
+        </div>
+
+        <div class="alert alert-success name info-block">
+            <h6>Name</h6>
+            <hr [ngStyle]="{'margin':'0'}">
+            <h3>{{good?.name}}</h3>
+            
+        </div>
+        
+        <div class="alert alert-success description info-block">
+            <h6>Description</h6>
+            <hr [ngStyle]="{'margin':'0'}">
+            <h4>{{good?.description}}</h4>
+        </div>
+
+        <div class="alert alert-info cost info-block">
+            <h6>Cost</h6>
+            <hr [ngStyle]="{'margin':'0'}">
+            <h4>${{good?.cost}}</h4>
+        </div>
+
+        <div id="btnAddDiv" class = "btnDiv">
+            <div class="btn-group col-6" role="group">
+                <button (click)="onAdd()" class="btn btn-large btn-success col-12">Add to basket!
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

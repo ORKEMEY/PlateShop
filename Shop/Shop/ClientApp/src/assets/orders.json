@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "address": "first",
+        "userId": 1,
+        "goods" : [
+            {
+                "id": 2,
+                "name": "second",
+                "description": "second description",
+                "cost": 13
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "address": "second",
+        "userId": 2,
+        "goods" : [
+            {
+                "id": 2,
+                "name": "second",
+                "description": "second description",
+                "cost": 13
+            },
+            {
+                "id": 1,
+                "name": "first",
+                "description": "first description",
+                "cost": 10
+            }
+        ]
+    }
+]

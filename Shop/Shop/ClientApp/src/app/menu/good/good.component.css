@@ -1,0 +1,105 @@
+div{
+    margin: 1px;
+    word-break: break-all;
+}
+
+.main-grid{
+
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+    grid-template-areas: ". center-col .";
+}
+
+.main-grid .center-col{
+    grid-area: center-col;
+}
+
+.container-good{
+    display: grid;
+    /*grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr auto 3fr auto 3fr auto 1fr 1fr;
+
+    grid-template-areas: ". . ."
+                        ". image ."
+                        "line1 line1 line1"
+                        ". name ."
+                        "line2 line2 line2"
+                        ". description ."
+                        "line3 line3 line3"
+                        ". btnBuyDiv ."
+                        ". . .";*/
+
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr auto auto 0.5fr;
+    grid-template-areas: ". . . ."
+                        ". image name ."                
+                        ". image description ."
+                        ". image cost ."
+                        ". . btnBuyDiv ."
+                        ". . . .";
+
+}
+
+.content{
+    grid-area: content;
+}
+
+.name{
+    grid-area: name;
+
+}
+
+.description{
+    grid-area: description;
+}
+
+.cost{
+    grid-area: cost;
+}
+
+.cost h4 {
+    align-self: center;
+}
+
+.info-block{
+    /*align-items: center;*/
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnDiv{
+    grid-area: btnBuyDiv;
+    display: flex;
+    justify-content: center;
+}
+
+.image_container{
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{
+    background-color: white;
+    border: solid 1px rgb(200, 200, 200);
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 5px rgb(200 200 200);
+}
+
+.image{
+    border-radius: 50%;
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}

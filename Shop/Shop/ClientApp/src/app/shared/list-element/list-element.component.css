@@ -1,0 +1,26 @@
+.list-element{
+    padding: 0.5em 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.list-element:hover{
+    background-color: lightgray;
+}
+
+.list-element:hover h4{
+    text-decoration: underline;
+}
+
+.list {
+    margin-left: 10pt;
+}
+  
+hr{
+    margin: 0;
+ }
+
+h4{
+    color: #007bff;
+}
+

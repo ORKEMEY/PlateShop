@@ -1,0 +1,17 @@
+<div class="list-element" > 
+   <div>
+    <h4 class="list">
+            {{Header}}
+    </h4>
+    
+    <p class="list">
+        {{Content}}
+    </p>
+</div>
+<div id="btn-container">
+    <button (click)="onDeleteButtonPushed()" id="btn-delete" class="btn btn-large btn-danger col-3">
+        <i [ngStyle]="{'display':'inline-block'}" class="gg-trash"></i> Remove
+    </button>
+</div>
+</div>
+<hr/>

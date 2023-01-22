@@ -1,0 +1,80 @@
+<div id="RegisterDiv" class="container-narrow">
+  <form [formGroup]="form" (ngSubmit)="submit()" id="RegiserForm" class="form-signin col-10 block">
+    <h2 id="SendRegiserFormLabel" class="form-signin-heading">Sign up</h2>
+    <br />
+    
+    <div class="form-block col-sm-12">
+      <div class="alert alert-danger form-block" role="alert" #alertCommonDiv hidden></div>
+    </div>
+    <div class="form-block">
+      <label for="Login" class="col-sm-2 col-form-label">Login:</label>
+      <div class="col-sm-12">
+        <input
+          type="text"
+          name="Login"
+          id="LoginRegiser"
+          (ngModelChange)="loginChange()"
+          class="input-block-level form-control"
+          placeholder="Login"
+          formControlName="Login"
+          required
+        />
+      </div>
+    </div>
+    <div class="form-block col-sm-12">
+      <div class="alert alert-danger form-block" role="alert" #alertLoginDiv hidden></div>
+    </div>
+    <div formGroupName="Passwords">
+      <div class="form-block">
+        <label for="Password" class="col-sm-2 col-form-label">Password:</label>
+        <div class="col-sm-12">
+          <input
+            type="password"
+            (ngModelChange)="passwordChange()"
+            name="Password"
+            id="PasswordRegiser"
+            class="input-block-level form-control"
+            placeholder="Password"
+            formControlName="Password"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-block col-sm-12">
+        <div class="alert alert-danger form-block" role="alert" #alertPasswordDiv hidden></div>
+      </div>
+
+      <div class="form-block">
+        <label for="ConfirmPassword" class="col-sm-5 col-form-label">Confirm password:</label>
+        <div class="col-sm-12">
+          <input
+            type="password"
+            name="ConfirmPassword"
+            (ngModelChange)="confirmPasswordChange()"
+            id="ConfirmPasswordRegiser"
+            class="input-block-level form-control"
+            placeholder="Password"
+            formControlName="ConfirmPassword"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-block col-sm-12">
+        <div
+          class="alert alert-danger form-block"
+          role="alert"
+          #alertConfirmPasswordDiv
+          hidden
+        ></div>
+      </div>
+    </div>
+    <br />
+    <input
+      type="submit"
+      [disabled]="form.invalid"
+      class="btn btn-large btn-success"
+      id="btnRegiserForm"
+      value="Sign up"
+    />
+  </form>
+</div>

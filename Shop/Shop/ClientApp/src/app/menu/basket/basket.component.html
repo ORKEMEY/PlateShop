@@ -1,0 +1,35 @@
+<br>
+<div class = "list-grid">
+    <div class = "center-col header block">
+        <div class="list row">
+            <h3 *ngIf="goods === null" class="loading">Loading</h3>
+            <h3 *ngIf="goods !== null" >Goods:</h3>
+            <div class="btn-container col-2">
+                <button id="btn-Buy" class="btn btn-large btn-success col-12" (click)="buyBtnClick()">
+                    Buy
+                </button>
+            </div>
+        </div>
+        <order-form [isVisible] = 'orderFormVisibility' [cost]="basketCost" (closed)="orderFormVisibility = false"></order-form>
+        <div >
+            <div id="Alert" class="alert alert-danger col-10" role="alert" #alertDiv hidden>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div *ngIf="goods !== null && goods.length !== 0" class = "list-grid">
+    <div id="ItemList" class="center-col block">
+        <delete-list-element-component *ngFor="let item of itemsPaginated" [Id]="item.id" [Header]="item.name" [Content]="'$' + item.cost"
+        (deleteButtonPushed)="removeGood($event)">
+        </delete-list-element-component>
+        <!--[routerLink]="['/menus/menu', { outlets: {primary: ['good', item.id], nav: 'basicnav' } }]"-->
+    </div>
+</div>
+<div class="carousel-container">
+    <ul  class="pagination-carousel block">
+        <li (click)="previous()">  Prev </li>
+        <li>  {{CurrentPage}} </li>
+        <li (click)="next()">  Next </li>
+    </ul>
+</div>
