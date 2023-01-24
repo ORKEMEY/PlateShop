@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Shop.PL.Controllers.GoodController">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAEAAAAAAAAg=</HashCode>
+      <FileName>Controllers\GoodController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Controllers.OrderController">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAAAAAAAAABAAAAAAAAACAEAAAQAAEAAAAAAAAg=</HashCode>
+      <FileName>Controllers\OrderController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Controllers.UserController">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAQAAAAABAAAAAAAAACAEAAAAAAEAAAAAAAAg=</HashCode>
+      <FileName>Controllers\UserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Models.GoodViewModel">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAABQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GoodViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Models.OrderViewModel">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAgAAAAAAAACAAAAAAAAACA=</HashCode>
+      <FileName>Models\OrderViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Goods" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Shop.PL.Models.TokenViewModel">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAEAAAAAgAEAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\TokenViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Models.UserViewModel">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\UserViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.MapperWEB">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapperWEB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Program">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.PL.Startup">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

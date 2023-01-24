@@ -19,7 +19,7 @@ using Swashbuckle.AspNetCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Shop
+namespace Shop.PL
 {
 	public class Startup
 	{
